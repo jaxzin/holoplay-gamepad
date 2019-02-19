@@ -84,7 +84,15 @@ Each button also has their own callback event.
     </script>
   </head>
   <body>
-    Pressing:</label><div id="holoButton"></div>
+    Pressing:<span id="holoButton"></span>
   </body>
 </html>
+```
+
+Try the example yourself:
+```bash
+git clone https://github.com/jaxzin/holoplay-gamepad.git
+yarn install
+grunt install
+start/open index.html
 ```

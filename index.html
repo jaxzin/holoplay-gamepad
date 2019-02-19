@@ -1,0 +1,36 @@
+<html>
+<head>
+    <!-- Bring in the GamePad.js dependencies, use `grunt install` -->
+    <script src="dependencies/GamePad/WebModule.js"></script>
+    <script>WebModule.publish = true;</script>
+    <script src="dependencies/GamePad/GamePadDevice.js"></script>
+    <script src="dependencies/GamePad/GamePad.js"></script>
+    <script src="dependencies/GamePad/GamePadPlayer.js"></script>
+
+    <!-- Bring in the holoplay-gamepad classes -->
+    <script src="lib/EventEmitter.js"></script>
+    <script src="lib/HoloPlayGamePad.js"></script>
+
+    <script>
+        var gamepad = new HoloPlayGamePad();
+        gamepad.on('buttonDown', function (name) {
+            document.getElementById("holoButton").innerText = name;
+        });
+        gamepad.on('buttonUp', function (name) {
+            document.getElementById("holoButton").innerText = '';
+        });
+
+        //Game loop
+        function WatchForInput() {
+            gamepad.tick();
+            // Setup a callback for the next animation tick.
+            requestAnimationFrame(WatchForInput);
+        }
+
+        WatchForInput()
+    </script>
+</head>
+    <body>
+        Pressing:<span id="holoButton"></span>
+    </body>
+</html>
