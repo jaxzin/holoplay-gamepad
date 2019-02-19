@@ -1,6 +1,7 @@
 holoplay-gamepad
 --------------------
-#Usage
+
+# Usage
 
 ### Setting up your event listener
 ```javascript
@@ -45,7 +46,8 @@ Each button also has their own callback event.
 * `circlePressed`
 * `circleUp`
 
-##Example
+## Example
+
 ```html
 <html>
   <head>
