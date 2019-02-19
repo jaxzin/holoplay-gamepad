@@ -26,9 +26,9 @@ WatchForInput()
 ## Events
 ### Listening to all buttons
 To listen to all the buttons, the callback is passed the `name` of the button
-  * `buttonDown` - Triggered once when the button is pressed
-  * `buttonPressed` - Triggered on each tim
-  * `buttonUp`
+  * `buttonDown` - Triggered once when the button is pressed.
+  * `buttonPressed` - Triggered each time `tick()` is called and the user is pressing the button.
+  * `buttonUp` - Trigger one when the user lifts their finger off the button.
   
 ### Listening to individual buttons
 Each button also has their own callback event.
