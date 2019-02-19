@@ -1,5 +1,8 @@
 holoplay-gamepad
 --------------------
+A JavaScript library for listening to button press events from a [Looking Glass display](https://lookingglassfactory.com).
+
+![The Looking Glass](https://i.ytimg.com/vi/htFotQi_-jY/maxresdefault.jpg)
 
 # Usage
 
